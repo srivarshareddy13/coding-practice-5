@@ -1,0 +1,42 @@
+//get movies 
+Send Request
+Get http://localhost:3000/movies/
+
+//add movie 
+Send Request
+Post http://localhost:3000/movies/ 
+[
+    {
+        "directorId":6,
+        "movieName": "Jurassic Park",
+        "leadActor":"Jeff Goldblum"
+    }
+] 
+//get movie 
+Send Request 
+Get "https://localhost:3000/movies/:movieId 
+
+//update movie 
+Send Request 
+Put "https://localhost:3000/movies/:movieId" 
+[
+    {
+        "directorId": 24,
+        "movieName": "Thor",
+        "leadActor": "Christopher Hemsworth"
+    }
+] 
+
+//delete movie 
+Send Request 
+Delete "https://localhost:3000/movies/:movieId"
+
+//get movie 
+Send Request 
+Get "https://localhost:3000/directors/"
+
+//
+
+//get movie 
+Send Request 
+Get "https://localhost:3000/directors/:directorId"
